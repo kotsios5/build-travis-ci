@@ -10,7 +10,7 @@ sudo apt-get install php7.0-gd -y
 
 sudo apt-get install php7.0-fpm -y
 sudo a2enmod proxy_fcgi setenvif
-sudo service apache2 restart
+# sudo service apache2 reload
 sudo a2enconf php7.0-fpm
 sudo service apache2 reload
 
@@ -26,9 +26,9 @@ sudo apt-get install php7.0-zip -y
 
 sudo apt-get install php-soap -y
 
-sudo service apache2 restart
+# sudo service apache2 reload
 
 sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/cli/php.ini
 sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/fpm/php.ini
 sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini
-sudo service apache2 restart
+sudo service apache2 reload

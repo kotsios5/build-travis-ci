@@ -36,4 +36,4 @@ sudo apt-get install php5.6-soap -y
 # sudo service apache2 restart
 
 sudo apt-get install php5.6-xml -y
-sudo service apache2 restart
+sudo service apache2 reload
