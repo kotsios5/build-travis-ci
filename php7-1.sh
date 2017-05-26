@@ -33,5 +33,7 @@ sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.1/fpm/php.
 sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.1/apache2/php.ini
 sudo service apache2 reload
 
-# php -v
-
+# Install codecept
+- cd /var/www/yclas-test/oc
+- sudo wget http://codeception.com/codecept.phar
+- sudo chmod -R 755 codecept.phar

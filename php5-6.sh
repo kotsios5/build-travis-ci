@@ -37,3 +37,8 @@ sudo apt-get install php5.6-soap -y
 
 sudo apt-get install php5.6-xml -y
 sudo service apache2 reload
+
+# Install codecept
+- cd /var/www/yclas-test/oc
+- sudo wget http://codeception.com/php5/codecept.phar
+- sudo chmod -R 755 codecept.phar
