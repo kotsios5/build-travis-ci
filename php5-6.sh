@@ -35,5 +35,9 @@ sudo apt-get install gettext
 sudo apt-get install php5.6-soap -y
 # sudo service apache2 restart
 
+# APCu
+sudo apt-get install php5-apcu -y
+
+
 sudo apt-get install php5.6-xml -y
 sudo service apache2 reload
