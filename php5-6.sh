@@ -39,9 +39,9 @@ sudo apt-get install php5.6-soap -y
 sudo apt-get install php5-apcu -y
 sudo service apache2 reload
 
-sudo echo "extension=apcu.so" >> /etc/php/5.6/fpm/php.ini
-sudo echo "apc.enabled=1" >> /etc/php/5.6/fpm/php.ini
-sudo echo "apc.enable_cli=1" >> /etc/php/5.6/fpm/php.ini
+sudo sed -i '/;openssl.capath=/aapc.enable_cli=1' etc/php/5.6/fpm/php.ini
+sudo sed -i '/;openssl.capath=/aapc.enabled=1' etc/php/5.6/fpm/php.ini
+sudo sed -i '/;openssl.capath=/aextension=apcu.so' etc/php/5.6/fpm/php.ini
 
 sudo apt-get install php5.6-xml -y
 sudo service apache2 reload
