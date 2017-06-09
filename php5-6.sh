@@ -37,9 +37,9 @@ sudo apt-get install php5.6-soap -y
 
 # APCu
 sudo apt-get install php5-apcu -y
-sudo echo "extension=apcu.so" >> /etc/php/5.6/cli/conf.d/20-apcu.ini
-sudo echo "apc.enabled=1" >> /etc/php/5.6/cli/conf.d/20-apcu.ini
-sudo echo "apc.enable_cli=1" >> /etc/php/5.6/cli/conf.d/20-apcu.ini
+sudo echo "extension=apcu.so" >> /etc/php/5.6/mods-available/apcu.ini
+sudo echo "apc.enabled=1" >> /etc/php/5.6/mods-available/apcu.ini
+sudo echo "apc.enable_cli=1" >> /etc/php/5.6/mods-available/apcu.ini
 
 sudo apt-get install php5.6-xml -y
 sudo service apache2 reload
