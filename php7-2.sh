@@ -27,9 +27,6 @@ sudo apt-get install libapache2-mod-php7..2
 
 php --version
 
-# sudo apt-get install -y language-pack-en-base
-# sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y
-# sudo apt-get update
 # sudo apt-get install php7.1
 # sudo apt-get install php7.1-curl -y
 
