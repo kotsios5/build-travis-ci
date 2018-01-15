@@ -1,9 +1,11 @@
+sudo apt-get install libpcre3 -y
+
 sudo apt-get install -y language-pack-en-base
 sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
 sudo apt-get install php7.2
 sudo apt-get install php7.2-fpm -y
-sudo apt-get install libapache2-mod-php7.2
+sudo apt-get install libapache2-mod-php7.2 -y
 
 # sudo apt-get install php7.2-curl -y
 
