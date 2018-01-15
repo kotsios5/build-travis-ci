@@ -1,13 +1,15 @@
 sudo apt-get update
 sudo apt-get dist-upgrade -y
+sudo apt-get install libapache2-mod-php -y
 
 sudo apt-get install -y language-pack-en-base
 sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
 sudo apt-get install php7.2
-sudo apt-get install libapache2-mod-php -y
 sudo apt-get install php7.2-fpm -y
 sudo apt-get install libapache2-mod-php7.2 -y
+
+sudo cat /etc/apache2/mods-enabled/php7.2.load
 
 sudo apt-get install php7.2-curl -y
 
