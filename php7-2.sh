@@ -1,3 +1,5 @@
+sudo apt-get update
+sudo apt-get dist-upgrade -y
 sudo apt-get install libpcre3 -y
 
 sudo apt-get install -y language-pack-en-base
