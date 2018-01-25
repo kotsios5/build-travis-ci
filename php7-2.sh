@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get install php7.2
 
 sudo apt-get update
-# sudo apt-get dist-upgrade -y
+sudo apt-get dist-upgrade -y
 
 sudo apt-get install php7.2-fpm -y
 sudo apt-get install libapache2-mod-php7.2 -y
@@ -14,7 +14,7 @@ sudo apt-get install libapache2-mod-php7.2 -y
 # sudo apt-get install php7.2-gd -y
 
 sudo a2enmod proxy_fcgi setenvif
-# sudo service apache2 reload
+sudo service apache2 reload
 sudo a2enconf php7.2-fpm
 sudo service apache2 reload
 
