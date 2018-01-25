@@ -1,3 +1,4 @@
+sudo apt-get install libtidy-0.99
 sudo apt-get install -y language-pack-en-base
 sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
