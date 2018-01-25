@@ -4,25 +4,25 @@ sudo apt-get update
 sudo apt-get install php7.2
 
 sudo apt-get update
-sudo apt-get dist-upgrade -y
+# sudo apt-get dist-upgrade -y
 
 sudo apt-get install php7.2-fpm -y
-sudo apt-get install libapache2-mod-php7.2 -y
+# sudo apt-get install libapache2-mod-php7.2 -y
 
-sudo apt-get install php7.2-curl -y
-sudo apt-get install php7.2-apc -y
-sudo apt-get install php7.2-gd -y
+# sudo apt-get install php7.2-curl -y
+# sudo apt-get install php7.2-apc -y
+# sudo apt-get install php7.2-gd -y
 
-sudo a2enmod proxy_fcgi setenvif
+# sudo a2enmod proxy_fcgi setenvif
 # sudo service apache2 reload
-sudo a2enconf php7.2-fpm
+# sudo a2enconf php7.2-fpm
 # sudo service apache2 reload
 
-sudo apt-get install php7.2-mbstring -y
-sudo apt-get install php7.2-mysql -y
-sudo apt-get install php7.2-xml -y
-sudo apt-get install php7.2-zip -y
-sudo apt-get install php7.2-soap -y
+# sudo apt-get install php7.2-mbstring -y
+# sudo apt-get install php7.2-mysql -y
+# sudo apt-get install php7.2-xml -y
+# sudo apt-get install php7.2-zip -y
+# sudo apt-get install php7.2-soap -y
 
 php --version
 
