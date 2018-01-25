@@ -11,6 +11,7 @@ sudo apt-get dist-upgrade -y
 sudo apt-get install php7.2-fpm -y
 sudo apt-get install libapache2-mod-php7.2 -y
 
+sudo apt-get install libpcre3
 sudo apt-get install php7.2-curl -y
 sudo apt-get install php7.2-apc -y
 sudo apt-get install php7.2-gd -y
