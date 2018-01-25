@@ -7,6 +7,7 @@ sudo apt-get update
 sudo apt-get dist-upgrade -y
 
 sudo apt-get install php7.2-fpm -y
+sudo apt-get install php7.2-cli -y
 sudo apt-get install libapache2-mod-php7.2 -y
 
 # sudo apt-get install php7.2-curl -y
