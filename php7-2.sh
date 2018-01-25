@@ -3,7 +3,7 @@
 sudo apt-get install -y language-pack-en-base
 sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej -y
 sudo apt-get update
-sudo apt-get install php7.2
+sudo apt-get install php7.2 -y
 
 sudo apt-get update
 sudo apt-get dist-upgrade -y
@@ -30,7 +30,7 @@ sudo service apache2 reload
 
 php --version
 
-# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/cli/php.ini
-# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/fpm/php.ini
-# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/apache2/php.ini
-# sudo service apache2 reload
+sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/cli/php.ini
+sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/fpm/php.ini
+sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/apache2/php.ini
+sudo service apache2 reload
