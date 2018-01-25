@@ -9,9 +9,6 @@ sudo apt-get update
 sudo apt-get dist-upgrade -y
 
 sudo apt-get install php7.2-fpm -y
-sudo apt-get install php7.2-cli -y
-sudo apt-get install php7.2-cgi -y
-sudo apt-get install php7.2-tidy -y
 sudo apt-get install libapache2-mod-php7.2 -y
 
 sudo apt-get install php7.2-curl -y
@@ -31,7 +28,7 @@ sudo service apache2 reload
 
 php --version
 
-sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/cli/php.ini
-sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/fpm/php.ini
-sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/apache2/php.ini
+# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/cli/php.ini
+# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/fpm/php.ini
+# sudo sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.2/apache2/php.ini
 sudo service apache2 reload
