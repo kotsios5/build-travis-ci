@@ -13,7 +13,7 @@ sudo apt-get install php7.2-fpm -y
 # sudo apt-get install php7.2-apc -y
 # sudo apt-get install php7.2-gd -y
 
-# sudo a2enmod proxy_fcgi setenvif
+sudo a2enmod proxy_fcgi setenvif
 # sudo service apache2 reload
 # sudo a2enconf php7.2-fpm
 # sudo service apache2 reload
