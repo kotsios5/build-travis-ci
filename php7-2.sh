@@ -22,10 +22,10 @@ sudo apt-get install php7.2-zip -y
 sudo apt-get install php7.2-soap -y
 sudo service apache2 start
 
-# sudo a2enmod proxy_fcgi setenvif
-# sudo service apache2 reload
-# sudo a2enconf php7.2-fpm
-# sudo service apache2 reload
+sudo a2enmod proxy_fcgi setenvif
+sudo service apache2 reload
+sudo a2enconf php7.2-fpm
+sudo service apache2 reload
 
 
 php --version
