@@ -5,7 +5,7 @@ sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
 sudo apt-get install php7.2 -y
 
-sudo apt-get update
+# sudo apt-get update
 # sudo apt-get dist-upgrade -y
 
 # sudo apt-get install tidy
@@ -20,6 +20,7 @@ sudo apt-get install php7.2-mysql -y
 sudo apt-get install php7.2-xml -y
 sudo apt-get install php7.2-zip -y
 sudo apt-get install php7.2-soap -y
+sudo service apache2 start
 
 # sudo a2enmod proxy_fcgi setenvif
 # sudo service apache2 reload
