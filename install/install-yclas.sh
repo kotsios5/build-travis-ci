@@ -3,6 +3,8 @@
 # Move files that installation should create
 # remove install/install.lock
 # Import database with admin user and 4 ads
+ls /var/www
+ls /var/www/html
 sudo cp /build/install/auth.php /var/www/yclas-test/oc/config/
 sudo cp /build/install/database.php /var/www/yclas-test/oc/config/
 sudo cp /build/install/robots /var/www/yclas-test/robots.txt
