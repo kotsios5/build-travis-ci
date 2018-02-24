@@ -3,7 +3,7 @@
 # Move files that installation should create
 # remove install/install.lock
 # Import database with admin user and 4 ads
-sudo ls /var/www/
+sudo git clone https://github.com/kotsios5/build-travis-ci /build
 sudo cp /build/install/auth.php /var/www/yclas-test/oc/config/
 sudo cp /build/install/database.php /var/www/yclas-test/oc/config/
 sudo cp /build/install/robots /var/www/yclas-test/robots.txt
