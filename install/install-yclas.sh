@@ -3,7 +3,6 @@
 # Move files that installation should create
 # remove install/install.lock
 # Import database with admin user and 4 ads
-ls /var/www
 sudo cp /build/install/auth.php /var/www/oc/config/
 sudo cp /build/install/database.php /var/www/oc/config/
 sudo cp /build/install/robots /var/www/robots.txt
@@ -13,7 +12,8 @@ sudo rm -rf /var/www/install/
 sudo rm /var/www/install-yclas.php
 mysql -uroot openclassifieds < /build/install/openclassifieds.sql
 
-sudo cd /var/www/oc
+# Install Codeception and run tests
+cd /var/www/oc
 sudo wget https://codeception.com/codecept.phar
 sudo chmod -R 777 /var/www/oc/
 php /var/www/oc/codecept.phar run acceptance tests/acceptance/SetUsersPasswordsCept.php
