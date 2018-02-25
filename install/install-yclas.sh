@@ -12,6 +12,8 @@ sudo sed -i 's/localhost/reoc.lo/g' /hosts.new
 sudo cp -f /hosts.new /etc/hosts
 sudo service apache2 restart
 
+echo 'GAMO SAS'
+
 # Installation
 
 # Move files that installation should create
