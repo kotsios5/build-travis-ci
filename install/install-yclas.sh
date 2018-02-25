@@ -14,7 +14,6 @@ sudo sed -i 's/localhost/reoc.lo/g' /hosts.new
 sudo cp -f /hosts.new /etc/hosts
 
 sudo service apache2 reload
-# getent hosts
 
 # Installation
 
@@ -28,7 +27,7 @@ sudo cp /build/install/sitemap /var/www/sitemap.xml
 sudo cp /build/install/htaccess-install /var/www/.htaccess
 sudo rm -rf /var/www/install/
 sudo rm /var/www/install-yclas.php
-mysql -uroot openclassifieds < /build/install/openclassifieds.sql
+mysql -uroot -p1234 openclassifieds < /build/install/openclassifieds.sql
 
 # allow tests update db
 sudo chmod 777 /var/www/oc/config/database.php
