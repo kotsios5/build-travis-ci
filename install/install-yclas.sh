@@ -9,10 +9,9 @@ sudo a2ensite reoc.lo.conf
 
 sudo cp /etc/hosts /hosts.new
 sudo sed -i 's/localhost/reoc.lo/g' /hosts.new
-sudo cp -f /hosts.new /etc/hosts
+sudo rm -f /etc/hosts
+sudo mv /hosts.new /etc/hosts
 sudo service apache2 restart
-
-echo 'GAMO SAS'
 
 # Installation
 
