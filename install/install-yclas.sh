@@ -24,12 +24,5 @@ sudo rm -rf /var/www/install/
 sudo rm /var/www/install-yclas.php
 mysql -uroot openclassifieds < /build/install/openclassifieds.sql
 
-# Install Codeception and run tests
-cd /var/www/oc
-sudo wget https://codeception.com/codecept.phar
-sudo chmod -R 777 /var/www/oc/
-php /var/www/oc/codecept.phar run acceptance tests/acceptance/SetUsersPasswordsCept.php
+# allow tests update db
 sudo chmod 777 /var/www/oc/config/database.php
-php /var/www/oc/codecept.phar run acceptance tests/acceptance/UpdateDBCept.php
-sudo chmod 755 /var/www/oc/config/database.php
-php /var/www/oc/codecept.phar run acceptance tests/acceptance/default
