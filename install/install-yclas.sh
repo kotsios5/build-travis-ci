@@ -12,7 +12,6 @@ sudo service apache2 reload
 sudo cp /etc/hosts /hosts.new
 sudo sed -i 's/localhost/reoc.lo/g' /hosts.new
 sudo cp -f /hosts.new /etc/hosts
-
 sudo service apache2 reload
 
 # Installation
