@@ -6,7 +6,6 @@ sudo service postfix start
 # Host configuration
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
 sudo a2ensite reoc.lo.conf
-
 sudo service apache2 restart
 
 # Installation
