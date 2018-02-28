@@ -15,6 +15,8 @@ sudo service apache2 restart
 # remove install/install.lock
 # Import database with admin user and 4 ads
 sudo cp /build/install/auth.php /var/www/oc/config/
+ls /build
+ls /build/install
 sudo cp /build/install/hosts /etc/hosts
 sudo cp /build/install/database.php /var/www/oc/config/
 sudo cp /build/install/robots /var/www/robots.txt
