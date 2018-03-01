@@ -1,12 +1,12 @@
 echo 'docker HOSTS'
 sudo cat /etc/hosts
 
-curl localhost
 
 # Start apache2, mysql, postfix
 sudo service apache2 start
 sudo service mysql start
 sudo service postfix start
+curl localhost
 
 # Host configuration
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
