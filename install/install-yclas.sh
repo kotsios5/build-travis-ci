@@ -1,3 +1,4 @@
+echo 'docker HOSTS'
 sudo cat /etc/hosts
 
 # Start apache2, mysql, postfix
@@ -18,6 +19,7 @@ sudo service apache2 restart
 sudo cp /build/install/auth.php /var/www/oc/config/
 sudo sed -i 's/localhost/reoc.lo/g' /build/install/hosts
 sudo cp /build/install/hosts /etc/hosts
+echo 'install HOSTS'
 sudo cat /etc/hosts
 sudo cp /build/install/database.php /var/www/oc/config/
 sudo cp /build/install/robots /var/www/robots.txt
