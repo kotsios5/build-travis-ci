@@ -8,6 +8,8 @@ sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf
 sudo a2ensite reoc.lo.conf
 # sudo service apache2 restart
 cat /etc/hosts
+ls /etc/apache2/sites-available
+curl localhost
 # Installation
 
 # Move files that installation should create
