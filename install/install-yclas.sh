@@ -19,8 +19,6 @@ curl reoc.lo
 # remove install/install.lock
 # Import database with admin user and 4 ads
 sudo cp /build/install/auth.php /var/www/oc/config/
-# sudo sed -i 's/localhost/reoc.lo/g' /build/install/hosts
-# sudo cp /build/install/hosts /etc/hosts
 sudo cp /build/install/database.php /var/www/oc/config/
 sudo cp /build/install/robots /var/www/robots.txt
 sudo cp /build/install/sitemap /var/www/sitemap.xml
@@ -33,3 +31,9 @@ sudo chmod -R 775 /var/www/*
 sudo chown -R www-data:www-data /var/www/*
 # allow tests update db
 sudo chmod 777 /var/www/oc/config/database.php
+
+cd /var/www/oc
+sudo wget https://codeception.com/codecept.phar
+php codecept.phar run acceptance /codeception/tests/acceptance/SetUsersPasswordsCept.php
+php codecept.phar run acceptance /codeception/tests/acceptance/UpdateDBCept.php
+php codecept.phar run acceptance /codeception/tests/acceptance/default
