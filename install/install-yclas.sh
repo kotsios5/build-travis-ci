@@ -1,6 +1,6 @@
 # Start apache2, mysql, postfix
 sudo service apache2 start
-sudo service mysqld start
+# sudo service mysqld start
 sudo service postfix start
 
 # Host configuration
