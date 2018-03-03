@@ -22,7 +22,7 @@ sudo rm /var/www/install-yclas.php
 mysql -uroot -p1234 openclassifieds < /build/install/openclassifieds.sql
 
 sudo chmod -R 777 /var/www/*
-sudo chown -R www-data:www-data /var/www/*
+# sudo chown -R www-data:www-data /var/www/*
 # allow tests update db
 sudo chmod 777 /var/www/oc/config/database.php
 
