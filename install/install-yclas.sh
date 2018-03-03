@@ -7,8 +7,7 @@ sudo service postfix start
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
 sudo a2ensite reoc.lo.conf
 # sudo service apache2 restart
-curl 0.0.0.0
-curl 0.0.0.0:80
+cat /etc/hosts
 # Installation
 
 # Move files that installation should create
