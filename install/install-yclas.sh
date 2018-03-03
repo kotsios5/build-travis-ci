@@ -34,6 +34,6 @@ sudo chmod 777 /var/www/oc/config/database.php
 
 cd /var/www/oc
 sudo wget https://codeception.com/codecept.phar
-php codecept.phar run acceptance /codeception/tests/acceptance/SetUsersPasswordsCept.php
-php codecept.phar run acceptance /codeception/tests/acceptance/UpdateDBCept.php
-php codecept.phar run acceptance /codeception/tests/acceptance/default
+php codecept.phar run acceptance /var/www/oc/tests/acceptance/SetUsersPasswordsCept.php
+php codecept.phar run acceptance /var/www/oc/tests/acceptance/UpdateDBCept.php
+php codecept.phar run acceptance /var/www/oc/tests/acceptance/default
