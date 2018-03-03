@@ -10,6 +10,7 @@ sudo a2ensite reoc.lo.conf
 cat /etc/hosts
 ls /etc/apache2/sites-available
 curl localhost
+curl reoc.lo
 # Installation
 
 # Move files that installation should create
