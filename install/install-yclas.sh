@@ -1,5 +1,4 @@
 # Start apache2, mysql, postfix
-ls /build
 sudo service apache2 start
 sudo service mysql start
 sudo service postfix start
@@ -7,7 +6,7 @@ sudo service postfix start
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
 sudo a2ensite reoc.lo.conf
 sudo service apache2 restart
-
+curl reoc.lo
 # Installation
 
 # Move files that installation should create
