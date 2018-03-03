@@ -1,6 +1,3 @@
-echo 'docker HOSTS'
-sudo cat /etc/hosts
-
 # Start apache2, mysql, postfix
 sudo service apache2 start
 sudo service mysql start
@@ -8,9 +5,10 @@ sudo service postfix start
 
 # Host configuration
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
-# sudo a2ensite reoc.lo.conf
-# sudo service apache2 reload
-ls /var/www
+sudo a2ensite reoc.lo.conf
+sudo service apache2 restart
+ls /etc/apache2/sites-available/
+cat /etc/apache2/sites-available/reoc.lo.conf 
 curl reoc.lo
 
 # Installation
