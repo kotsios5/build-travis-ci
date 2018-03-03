@@ -9,6 +9,8 @@ sudo a2ensite reoc.lo.conf
 # sudo service apache2 restart
 cat /etc/hosts
 ls /etc/apache2/sites-available
+ls /var/www/
+ls -la /var/www/
 curl localhost
 curl reoc.lo
 # Installation
