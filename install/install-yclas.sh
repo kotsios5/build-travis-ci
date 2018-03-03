@@ -1,8 +1,8 @@
 # Start apache2, mysql, postfix
 sudo service apache2 start
-# sudo service mysqld start
-# sudo service postfix start
-
+sudo service mysqld start
+sudo service postfix start
+echo 'AAAA'
 # Host configuration
 sudo cp -f /build/travis-ci-apache /etc/apache2/sites-available/reoc.lo.conf 
 sudo a2ensite reoc.lo.conf
