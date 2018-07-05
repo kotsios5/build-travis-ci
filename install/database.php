@@ -6,7 +6,7 @@ return array
         'connection' => array(
             'hostname'   => 'localhost',
             'username'   => 'root',
-            'password'   => '1234',
+            'password'   => '',
             'persistent' => FALSE,
             'database'   => 'openclassifieds',
             'variables'  => array('sql_mode'=>'')
