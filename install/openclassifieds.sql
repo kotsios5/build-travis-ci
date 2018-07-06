@@ -748,7 +748,8 @@ CREATE TABLE `yc3_locations` (
   `latitude` float(10,6) DEFAULT NULL,
   `longitude` float(10,6) DEFAULT NULL,
   `id_geoname` int(10) UNSIGNED DEFAULT NULL,
-  `fcodename_geoname` varchar(145) DEFAULT NULL
+  `fcodename_geoname` varchar(145) DEFAULT NULL,
+  `translations` text,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
