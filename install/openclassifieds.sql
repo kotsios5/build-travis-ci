@@ -159,7 +159,8 @@ CREATE TABLE `yc3_categories` (
   `description` text,
   `price` decimal(10,2) NOT NULL DEFAULT '0.00',
   `last_modified` datetime DEFAULT NULL,
-  `has_image` tinyint(1) NOT NULL DEFAULT '0'
+  `has_image` tinyint(1) NOT NULL DEFAULT '0',
+  `translations` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
